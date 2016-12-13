@@ -87,27 +87,35 @@
 
     <!-- Services Section -->
     <section id="services">
-    <form name="form0" id="form0" method="GET" class="marginbottom10">
-                        <p>Start Year</p>
-                        <select id="startyear" class="select-style0">
-                            <option value="1">2012</option>
-                            <option value="2">2013</option>
-                            <option value="3">2014</option>
-                            <option value="4">2015</option>
-                            <option value="5">2016</option>
-                        </select>
-                        <p>End Year</p>
-                        <select id="endyear" class="select-style0">
-                            <option value="1">2012</option>
-                            <option value="2">2013</option>
-                            <option value="3">2014</option>
-                            <option value="4">2015</option>
-                            <option value="5">2016</option>
-                        </select>
-                    </form>
+                   
         <div class="container">
+            <div class="row marginbottom10">
+                <form name="form0" id="form0" method="GET" class="marginbottom10">
+                    <div class="col-md-3 col-md-offset-2 text-center">
+                        Start Year
+                        <select id="startyear" class="select-style1">
+                            <option value="1">2012</option>
+                            <option value="2">2013</option>
+                            <option value="3">2014</option>
+                            <option value="4">2015</option>
+                            <option value="5">2016</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 text-center">
+                        End Year
+                        <select id="endyear" class="select-style1">
+                            <option value="1">2012</option>
+                            <option value="2">2013</option>
+                            <option value="3">2014</option>
+                            <option value="4">2015</option>
+                            <option value="5">2016</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
             <div class="row">
                <div class="col-md-9 text-center">
+
                     <form name="form1" id="form1" method="GET" class="marginbottom10">
                         <select id="target" class="select-style1">
                             <option value="1">EPS</option>
@@ -120,7 +128,7 @@
                             <option value="2"><</option>
                           
                         </select>
-                        <input id="text1" type="text" name="data">
+                        <input id="text1" type="text" name="data" class="textbox1">
                     </form>
                     <form name="form2" id="form2" method="GET" class="marginbottom10">
                         <select id="target" class="select-style1">
@@ -134,7 +142,7 @@
                             <option value="2"><</option>
                           
                         </select>
-                        <input id="text2" type="text" name="data">
+                        <input id="text2" type="text" name="data" class="textbox1">
                         <p id="percentHere"></p>
                     </form>
                     <form name="form3" id="form3" method="GET" class="marginbottom10">
@@ -149,7 +157,7 @@
                             <option value="2"><</option>
                           
                         </select>
-                        <input id="text3" type="text" name="data">
+                        <input id="text3" type="text" name="data" class="textbox1">
                         <p id="percentHere"></p>
                     </form>
                     <form name="form4" id="form4" method="GET" class="marginbottom10">
@@ -164,13 +172,13 @@
                             <option value="2"><</option>
                           
                         </select>
-                        <input id="text4" type="text" name="data">
+                        <input id="text4" type="text" name="data" class="textbox1">
                         <p id="percentHere"></p>
                     </form>
                 </div>
                  
                 <div class="col-md-3">
-                    <input type="button" value="search" onclick="search()" class="button1" id="search"></input>
+                    <input type="button" value="search" onclick="search()" class="button1 marginbottom30" id="search"></input>
                     <input type="button" value="clear" class="button1" id="clear"></input>
                 </div>
                 
@@ -193,11 +201,11 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-9 text-center">
-                    <form name="form2" id="form2" method="GET">
+                    <form name="form5" id="form5" method="GET">
                         compare
-                        <input type="text" name="company1">
+                        <input type="text" name="company1" class="textbox1">
                         and
-                        <input type="text" name="company2">
+                        <input type="text" name="company2" class="textbox1">
                     </form>
                     
                 </div>
