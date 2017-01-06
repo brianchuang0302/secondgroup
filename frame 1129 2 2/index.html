@@ -28,6 +28,36 @@
 
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.1.min.js"></script>
+    <function onClickCo(){
+    var aCompany=2330;
+    //getElementById("form5").company1;
+    var bCompany=8069;
+    //getElementById("form5").company2;
+    var coEffNum=getCo(aCompany,bCompany);
+    alert(coEffNum);
+   // coefficeint(aCompany,bCompany);
+
+
+
+}
+    var dataset;
+function getCo(astock,bstock){
+
+    //var ;
+    var co;
+    d3.csv("https://seanlee128.github.io/stock-filter/test.csv", function(data) {
+            dataset=data
+           });
+    for(i=0;i<dataset.length;i++){
+        if(dataset[i][0]==astock)
+            for(j=0;j<dataset[i].length;j++){
+                if(dataset[i][0]==bstock);
+                   co=dataset[i][j];
+            }
+    }
+    return co;
+}
+//onClickCo();
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -736,6 +766,7 @@
     <script src="https://dearanita1116.github.io/secondgroup/frame%201129%202%202/js/agency.min.js"></script>
     <script src="https://ichio345.github.io/stock-project/abc.js"></script>
     <script src="https://brianchuang0302.github.io/D3/graphing.js"></script>
+
 </body>
 
 </html>
